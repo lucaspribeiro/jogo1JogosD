@@ -11,6 +11,8 @@ public class grapler : MonoBehaviour
     void Start()
     {
         _distanceJoint.enabled = false;
+        _lineRenderer = GetComponent<LineRenderer>();
+        _distanceJoint = GetComponent<DistanceJoint2D>();
     }
 
     // Update is called once per frame
