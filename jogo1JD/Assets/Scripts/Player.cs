@@ -15,8 +15,11 @@ public class Player : MonoBehaviour
     public bool inFloor = true;
     public bool doubleJump;
 
+    private GameController gcPlayer;
     void Start()
-    {   
+    {
+        gcPlayer = GameController.gc;
+        gcPlayer.coins = 0;
         //playerAnim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         rbPlayer = GetComponent<Rigidbody2D>();
@@ -75,4 +78,16 @@ public class Player : MonoBehaviour
             doubleJump = false;
         }
     }
-}
+
+    
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Coins")
+        {
+            Destroy(collision.gameObject);
+            gcPlayer.coins += 1;
+            gcPlayer.coinsText.text = gcPlayer.coins.ToString();
+        }
+    }
+ }
+    
