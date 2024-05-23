@@ -15,6 +15,9 @@ public class Player : MonoBehaviour
     public bool inFloor = true;
     public bool doubleJump;
 
+    public LayerMask groundLayer;  // LayerMask to specify the ground layer
+    public float checkDistance = 0.1f;  // Distance for the Raycast check
+
     private GameController gcPlayer;
     void Start()
     {
@@ -50,34 +53,20 @@ public class Player : MonoBehaviour
     }
 
     void Jump()
-    {
+    {   
         if (Input.GetButtonDown("Jump"))
-        {   
-            if(inFloor)
+        {
+            CheckGrounded();
+            if (inFloor)
             {
                 rbPlayer.velocity = Vector2.zero;
                 rbPlayer.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
                 inFloor = false;
-                doubleJump = true;
-            }
-            else if (!inFloor && doubleJump)
-            {
-                rbPlayer.velocity = Vector2.zero;
-                rbPlayer.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-                inFloor = false;
-                doubleJump = false;
             }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.name == "Ground") 
-        {
-            inFloor = true;
-            doubleJump = false;
-        }
-    }
+ 
 
     
     public void OnTriggerEnter2D(Collider2D collision)
@@ -88,6 +77,45 @@ public class Player : MonoBehaviour
             gcPlayer.coins += 1;
             gcPlayer.coinsText.text = gcPlayer.coins.ToString();
         }
+
+        if(collision.gameObject.tag == "Liminha")
+        {
+            rbPlayer.velocity = Vector2.zero;
+            rbPlayer.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
+            collision.gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            collision.gameObject.GetComponent<Liminha>().enabled = false;
+            collision.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+            Destroy(collision.gameObject, 1f);
+        }
     }
- }
+
+    void CheckGrounded()
+    {
+        // Position to start the Raycast (usually the bottom of the character)
+        Vector2 position = transform.position;
+        // Direction to cast the Ray (downwards)
+        Vector2 direction = Vector2.down;
+
+        // Perform the Raycast
+        RaycastHit2D hit = Physics2D.Raycast(position, direction, checkDistance, groundLayer);
+
+        // Check if the Raycast hit something
+        if (hit.collider != null)
+        {
+            inFloor = true;
+        }
+        else
+        {
+            inFloor = false;
+        }
+    }
+
+    public bool IsGrounded()
+    {
+        return inFloor;
+    }
+}
+
     
