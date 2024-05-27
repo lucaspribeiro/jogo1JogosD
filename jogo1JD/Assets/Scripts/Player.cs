@@ -116,6 +116,17 @@ public class Player : MonoBehaviour
     {
         return inFloor;
     }
+
+    public void Die()
+    {
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        GetComponent<BoxCollider2D>().enabled = false;
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        GetComponent<Animator>().SetBool("Jump", false);
+        this.enabled = false;
+
+        // Destroy(gameObject);
+    }
 }
 
     
