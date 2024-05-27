@@ -2379,6 +2379,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 739a70925bf96704993aebc20d99e127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  detectionRange: 10
+  fireRate: 2
+  projectileSpeed: 10
 --- !u!1 &493009743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,7 +2663,7 @@ GameObject:
   - component: {fileID: 590484475}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

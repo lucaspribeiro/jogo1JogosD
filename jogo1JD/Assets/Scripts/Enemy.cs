@@ -47,12 +47,15 @@ public class Enemy : MonoBehaviour
         Destroy(projectile, 5f);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+        //if (collision.gameObject.tag == "Player")
+        //{
+            //collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            //collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            //collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+            //collision.gameObject.GetComponent<Player>().enabled = false;
+            //collision.gameObject.GetComponent<Animator>().SetBool("Jump", false);
+        //}
+    //}
 }
