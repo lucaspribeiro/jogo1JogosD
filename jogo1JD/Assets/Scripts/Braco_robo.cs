@@ -26,8 +26,6 @@ public class Braco_robo : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GameObject maoInt = Instantiate(mao, shootPoint.position, Quaternion.identity);
-            maoInt.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, rotZ);
-            maoInt.GetComponent<MaoBot>().GetComponent<LineRenderer>().positionCount = 2;
             maoInt.GetComponent<MaoBot>().position = direcao;
             maoInt.GetComponent<MaoBot>().braco = shootPoint;
         }

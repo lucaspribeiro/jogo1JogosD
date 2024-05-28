@@ -17,10 +17,7 @@ public class MaoBot : MonoBehaviour
     void Update()
     {
         transform.Translate(position.normalized * Time.deltaTime * 25);
-        if (linha.positionCount == 2)
-        {
-            GetComponent<LineRenderer>().SetPosition(0, transform.position);
-            GetComponent<LineRenderer>().SetPosition(1, braco.position);
-        }
+        GetComponent<LineRenderer>().SetPosition(0, transform.position);
+        GetComponent<LineRenderer>().SetPosition(1, braco.position);
     }
 }
