@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class Player : MonoBehaviour
 
     public LifePointer LifePointer;
 
-    private float speed = 5;
-    private float jumpForce = 8;
+    private float speed = 4;
+    private float jumpForce = 7;
     public bool inFloor = true;
     public bool doubleJump;
 
@@ -136,5 +137,12 @@ public class Player : MonoBehaviour
         GetComponent<Animator>().SetBool("Dead", true);
         this.enabled = false;
         LifePointer.SetPlayerLife(0);
+        StartCoroutine(LoadGameOverScene());
+    }
+
+    private IEnumerator LoadGameOverScene()
+    {
+        yield return new WaitForSeconds(2); 
+        SceneManager.LoadScene("GameOver"); 
     }
 }
