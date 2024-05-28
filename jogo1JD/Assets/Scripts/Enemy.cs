@@ -13,11 +13,13 @@ public class Enemy : MonoBehaviour
 
     private Transform player; // Referência ao Transform do jogador
     private float nextFireTime = 0f; // Tempo até o próximo disparo
+    private Animator anim;
 
     void Start()
     {
         // Encontre o jogador na cena
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -28,6 +30,7 @@ public class Enemy : MonoBehaviour
             // Verifique se é hora de disparar
             if (Time.time >= nextFireTime)
             {
+
                 FireProjectile();
                 nextFireTime = Time.time + 1f / fireRate;
             }
