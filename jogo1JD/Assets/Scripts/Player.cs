@@ -13,8 +13,8 @@ public class Player : MonoBehaviour
 
     public LifePointer LifePointer;
 
-    private float speed = 5;
-    private float jumpForce = 8;
+    private float speed = 4;
+    private float jumpForce = 7;
     public bool inFloor = true;
     public bool doubleJump;
 
