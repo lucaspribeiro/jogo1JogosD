@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
 
     private GameController gcPlayer;
 
+    public CoinsSO coinsSO;
+
     void Start()
     {
         gcPlayer = GameController.gc;
@@ -77,7 +79,8 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Coins")
         {
             Destroy(collision.gameObject);
-            gcPlayer.coins += 1;
+            coinsSO.Value += 1;
+            gcPlayer.coins = coinsSO.Value;
             gcPlayer.coinsText.text = gcPlayer.coins.ToString();
         }
 
