@@ -8,6 +8,8 @@ TagManager:
   - Liminha
   - Balinha
   - Spike
+  - Agarravel
+  - "N\xE3oAgarravel"
   layers:
   - Default
   - TransparentFX
