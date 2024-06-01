@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Liminha : MonoBehaviour
 {
+    //private Animator liminhaAnim;
     public float speed;
     public bool ground = true;
     public Transform groundCheck;
@@ -13,6 +14,7 @@ public class Liminha : MonoBehaviour
 
     void Start()
     {
+        //liminhaAnim = GetComponent<Animator>();
         coolDown = 0;
     }
 
