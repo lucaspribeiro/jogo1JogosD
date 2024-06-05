@@ -11,9 +11,9 @@ public class Spike : MonoBehaviour
             Player playerScript = collision.gameObject.GetComponent<Player>();
             if (playerScript != null)
             {
-                playerScript.Die();
+                //playerScript.Die();
             }
-            Debug.Log("la ele");
+            //Debug.Log("la ele");
         }
     }
 }

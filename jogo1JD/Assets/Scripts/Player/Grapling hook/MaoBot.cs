@@ -12,6 +12,7 @@ public class MaoBot : MonoBehaviour
     public Transform baseMao;
     public float maxDist = 5;
     public bool validaVoltaMao;
+    public Player scriptPlayer;
 
     private float distancia = 0;
     private bool bateu;
@@ -21,6 +22,7 @@ public class MaoBot : MonoBehaviour
     {
         bateu = false;
         validaVoltaMao = false;
+        scriptPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -53,6 +55,7 @@ public class MaoBot : MonoBehaviour
     {
         transform.position = transform.position;
         bateu = true;
+        scriptPlayer.isGrapling = true;
         braco.GetComponent<Braco_robo>().spring.enabled = true;
         braco.GetComponent<Braco_robo>().spring.connectedBody = GetComponent<Rigidbody2D>();
     }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8c04328f0b8500c4d87659807d1cbf7d
+guid: 611d9489e7b3b8f458ac246e3af9f55d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,24 +93,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AnimationShockCables_Sprite-sheet_0
+      name: EngrenagemFlutuante_Sprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34191b1a8a22d6e409829c6dd76beb62
-      internalID: 1588341514
+      spriteID: 58b88e6111048f540842ad6a4a165ec3
+      internalID: -963371532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnimationShockCables_Sprite-sheet_1
+      name: EngrenagemFlutuante_Sprite_1
       rect:
         serializedVersion: 2
         x: 16
@@ -145,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44a09153279914e4cad3a713146b5e85
-      internalID: -996883909
+      spriteID: 31de4dc1fb668694eac3c2a4bc3dde62
+      internalID: -902381051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnimationShockCables_Sprite-sheet_2
+      name: EngrenagemFlutuante_Sprite_2
       rect:
         serializedVersion: 2
         x: 32
@@ -166,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 267d099ebde853c4ea755735ef9d0376
-      internalID: -355476775
+      spriteID: 01e4221bd93b3fc4ba07c7ffaf660caf
+      internalID: 1801579040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnimationShockCables_Sprite-sheet_3
+      name: EngrenagemFlutuante_Sprite_3
       rect:
         serializedVersion: 2
         x: 48
@@ -187,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2a86aeae5be9c640bf1f90ffa450aed
-      internalID: 1199766406
+      spriteID: eda90272778d7fc4e9fe2894575c6160
+      internalID: -1430581518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnimationShockCables_Sprite-sheet_4
+      name: EngrenagemFlutuante_Sprite_4
       rect:
         serializedVersion: 2
         x: 64
@@ -208,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3457ee1682e22d44c84d4eb2f1200c88
-      internalID: -1469985060
+      spriteID: 3a57cbb998e573e4fb4b6ace3b4ffa64
+      internalID: 774243462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnimationShockCables_Sprite-sheet_5
+      name: EngrenagemFlutuante_Sprite_5
       rect:
         serializedVersion: 2
         x: 80
@@ -229,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a742c2cf3eafbea4f8488fb3abe0e220
-      internalID: 903390160
+      spriteID: 360591e9afafd8e448dd26bf776f4271
+      internalID: 370640718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnimationShockCables_Sprite-sheet_6
+      name: EngrenagemFlutuante_Sprite_6
       rect:
         serializedVersion: 2
         x: 96
@@ -250,29 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bfc4d23b01762745ac324f00b834285
-      internalID: -1357048012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AnimationShockCables_Sprite-sheet_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 560e4bd9947c3094787277538d8a0591
-      internalID: 447639387
+      spriteID: 7c5c579a7919db14da2f51f4ccbb58db
+      internalID: 1243804721
       vertices: []
       indices: 
       edges: []
@@ -288,14 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AnimationShockCables_Sprite-sheet_0: 1588341514
-      AnimationShockCables_Sprite-sheet_1: -996883909
-      AnimationShockCables_Sprite-sheet_2: -355476775
-      AnimationShockCables_Sprite-sheet_3: 1199766406
-      AnimationShockCables_Sprite-sheet_4: -1469985060
-      AnimationShockCables_Sprite-sheet_5: 903390160
-      AnimationShockCables_Sprite-sheet_6: -1357048012
-      AnimationShockCables_Sprite-sheet_7: 447639387
+      EngrenagemFlutuante_Sprite_0: -963371532
+      EngrenagemFlutuante_Sprite_1: -902381051
+      EngrenagemFlutuante_Sprite_2: 1801579040
+      EngrenagemFlutuante_Sprite_3: -1430581518
+      EngrenagemFlutuante_Sprite_4: 774243462
+      EngrenagemFlutuante_Sprite_5: 370640718
+      EngrenagemFlutuante_Sprite_6: 1243804721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

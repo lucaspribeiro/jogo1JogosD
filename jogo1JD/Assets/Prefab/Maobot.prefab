@@ -319,7 +319,7 @@ MonoBehaviour:
   mao: {fileID: 2532686802144522441}
   braco: {fileID: 0}
   baseMao: {fileID: 454369378832382442}
-  maxDist: 3
+  maxDist: 5
   validaVoltaMao: 0
 --- !u!50 &1005859989402231665
 Rigidbody2D:
