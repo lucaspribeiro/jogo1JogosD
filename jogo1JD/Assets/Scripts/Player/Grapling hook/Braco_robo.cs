@@ -10,6 +10,7 @@ public class Braco_robo : MonoBehaviour
     public SpriteRenderer spriteMao;
     public bool lancaMaoValido;
     public SpringJoint2D spring;
+    public Player scriptPlayer;
 
     private MaoBot maoInstanciada;
     private Camera mainCam;
@@ -20,6 +21,7 @@ public class Braco_robo : MonoBehaviour
     {
         braco = GetComponent<Transform>();
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        scriptPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         lancaMaoValido = true;
     }
 
@@ -45,6 +47,7 @@ public class Braco_robo : MonoBehaviour
         else if (Input.GetMouseButtonUp(0) && maoInstanciada)
         {
             spring.enabled = false;
+            scriptPlayer.isGrapling = false;
             maoInstanciada.validaVoltaMao = true;
         }
         else
