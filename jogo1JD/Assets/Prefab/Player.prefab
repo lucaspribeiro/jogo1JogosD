@@ -141,7 +141,7 @@ MonoBehaviour:
     m_Bits: 64
   checkDistance: 0.5
   braco: {fileID: 899035835742367101}
-  coinsSO: {fileID: 11400000, guid: 7a7d9cd874116284888436a2d305805c, type: 2}
+  dataSO: {fileID: 11400000, guid: 7a7d9cd874116284888436a2d305805c, type: 2}
   isKnockDir: 0
   KBcount: 0
   KBforce: 3
