@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f52ca0d13f45bc42909fcaa74e79e23, type: 3}
   m_Name: dataSO
   m_EditorClassIdentifier: 
-  _coins: 23
-  _coinsLevel1: 15
-  _level: Level 2
-  _vida: 50
+  _coins: 0
+  _coinsLevel1: 0
+  _level: Level 1
+  _vida: 100
