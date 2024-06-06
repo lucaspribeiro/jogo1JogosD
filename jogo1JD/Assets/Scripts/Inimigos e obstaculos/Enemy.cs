@@ -27,10 +27,10 @@ public class Enemy : MonoBehaviour
         // Verifique se o jogador está dentro da faixa de detecção
         if (Vector2.Distance(transform.position, player.position) <= detectionRange)
         {
+            
             // Verifique se é hora de disparar
             if (Time.time >= nextFireTime)
             {
-
                 FireProjectile();
                 nextFireTime = Time.time + 1f / fireRate;
             }
@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour
 
     void FireProjectile()
     {
+        anim.SetTrigger("Shoot");
         // Instancie o projétil no ponto de disparo
         GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
 

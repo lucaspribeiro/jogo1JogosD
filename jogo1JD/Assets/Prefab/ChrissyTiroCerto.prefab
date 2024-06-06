@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.13, y: -1.77, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5516472905557121930}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: ecba975291cdc1d4fb7b4d90ed524474, type: 3}
+  m_Sprite: {fileID: -91242334, guid: 32f0cb75c3095b44aa47eee8f9ea3c93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,8 +121,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
+  m_Offset: {x: 0.009870768, y: 0.003456831}
+  m_Size: {x: 0.27209044, y: 0.34146345}
   m_Direction: 0
 --- !u!50 &1544170981736424092
 Rigidbody2D:
@@ -150,7 +150,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 7
 --- !u!95 &1785755182321047279
 Animator:
   serializedVersion: 5
@@ -186,9 +186,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6935585900408202602, guid: bab8b58d4dcebd54e8be497b645ef25c, type: 3}
   firePoint: {fileID: 5516472905557121930}
-  detectionRange: 10
-  fireRate: 2
-  projectileSpeed: 10
+  detectionRange: 5
+  fireRate: 1
+  projectileSpeed: 5
 --- !u!1 &6446282280904627771
 GameObject:
   m_ObjectHideFlags: 0
