@@ -7583,6 +7583,8 @@ MonoBehaviour:
   player: {fileID: 590484469}
   minX: 0.1
   maxX: 31
+  minY: 0
+  maxY: 2
   timeLerp: 0.05
 --- !u!1 &568613087
 GameObject:
@@ -7828,11 +7830,17 @@ MonoBehaviour:
   LifePointer: {fileID: 839523353}
   inFloor: 1
   doubleJump: 0
+  isGrapling: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   checkDistance: 0.5
+  braco: {fileID: 0}
   coinsSO: {fileID: 11400000, guid: 7a7d9cd874116284888436a2d305805c, type: 2}
+  isKnockDir: 0
+  KBcount: 0
+  KBforce: 0
+  KBTime: 0.2
 --- !u!95 &590484473
 Animator:
   serializedVersion: 5

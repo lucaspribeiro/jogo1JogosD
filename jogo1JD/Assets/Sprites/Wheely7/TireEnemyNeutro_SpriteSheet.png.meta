@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b9a0c67157e4cab4db5639a2f6e42a67
+guid: 87a37b59c68e92a4480e12a400d949d0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TireEnemyIdle1_SpriteSheet_0
+      name: TireEnemyNeutro_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f479ac7254886ec468e4f1f07df8dd3f
-      internalID: 2078430015
+      spriteID: 2238a1c3fce9b61408714dc8e6d497e5
+      internalID: 1873932243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TireEnemyIdle1_SpriteSheet_1
+      name: TireEnemyNeutro_SpriteSheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 699b686d5c0524f419981cd6790496a0
-      internalID: 857071521
+      spriteID: 7bc770e82e8a6d740962d9ac23696863
+      internalID: 1797754355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TireEnemyIdle1_SpriteSheet_2
+      name: TireEnemyNeutro_SpriteSheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,8 +166,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58088336a79123f49b7ca73d67f4ce5d
-      internalID: 797380472
+      spriteID: 1129b32650730904d9582f900087a2dd
+      internalID: 1882672417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TireEnemyNeutro_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd57ce0e9f78e9e4693c07201ff982dc
+      internalID: 1276228655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TireEnemyNeutro_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb57b46041068e42a399984f75d18e4
+      internalID: 2079855025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TireEnemyNeutro_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216a5030ffab59843b65b947ae6c2d41
+      internalID: 747726672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TireEnemyNeutro_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aab2fcfc2aa892439d39e5e323d6505
+      internalID: -1537194068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TireEnemyNeutro_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4800ff2762dc84889ab8f36631bf63
+      internalID: -1398782779
       vertices: []
       indices: 
       edges: []
@@ -176,16 +281,21 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TireEnemyIdle1_SpriteSheet_0: 2078430015
-      TireEnemyIdle1_SpriteSheet_1: 857071521
-      TireEnemyIdle1_SpriteSheet_2: 797380472
+      TireEnemyNeutro_SpriteSheet_0: 1873932243
+      TireEnemyNeutro_SpriteSheet_1: 1797754355
+      TireEnemyNeutro_SpriteSheet_2: 1882672417
+      TireEnemyNeutro_SpriteSheet_3: 1276228655
+      TireEnemyNeutro_SpriteSheet_4: 2079855025
+      TireEnemyNeutro_SpriteSheet_5: 747726672
+      TireEnemyNeutro_SpriteSheet_6: -1537194068
+      TireEnemyNeutro_SpriteSheet_7: -1398782779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
