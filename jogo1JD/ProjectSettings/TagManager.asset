@@ -10,6 +10,7 @@ TagManager:
   - Spike
   - Agarravel
   - "N\xE3oAgarravel"
+  - Prensa
   layers:
   - Default
   - TransparentFX
@@ -18,10 +19,10 @@ TagManager:
   - Water
   - UI
   - ground
+  - Inimigo
   - 
   - 
-  - 
-  - 
+  - Player
   - 
   - 
   - 

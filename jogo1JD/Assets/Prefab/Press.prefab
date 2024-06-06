@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1474951609281355743}
   - component: {fileID: 8566053885224725419}
   - component: {fileID: 9161754334370990810}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Press
-  m_TagString: Spike
+  m_TagString: Prensa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4690216219630890735}
   - component: {fileID: 578070439417100873}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
