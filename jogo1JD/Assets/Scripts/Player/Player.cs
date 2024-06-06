@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
 
     public GameObject braco;
     private GameController gcPlayer;
-    public CoinsSO coinsSO;
+    public DataSO dataSO;
 
     public bool isKnockDir; // é jogado para direita
     public float KBcount; // é a quantidade de tempo até ser jogado para traz
@@ -37,7 +37,9 @@ public class Player : MonoBehaviour
     void Start()
     {
         gcPlayer = GameController.gc;
-        gcPlayer.coins = coinsSO.Value;
+        gcPlayer.coins = dataSO.Value;
+        gcPlayer.coinsText.text = gcPlayer.coins.ToString();
+        LifePointer.SetPlayerLife(dataSO.Vida);
         sr = GetComponent<SpriteRenderer>();
         rbPlayer = GetComponent<Rigidbody2D>();
         circleCollider = GetComponent<CircleCollider2D>();
@@ -121,8 +123,8 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Coins"))
         {
             Destroy(collision.gameObject);
-            coinsSO.Value += 1;
-            gcPlayer.coins = coinsSO.Value;
+            dataSO.Value += 1;
+            gcPlayer.coins = dataSO.Value;
             gcPlayer.coinsText.text = gcPlayer.coins.ToString();
         }
 
@@ -169,6 +171,9 @@ public class Player : MonoBehaviour
                 isKnockDir = false;
             }
             KBcount = KBTime;
+        }else if (collision.gameObject.CompareTag("Prensa"))
+        {
+            Die();
         }
     }
 
@@ -207,12 +212,12 @@ public class Player : MonoBehaviour
 
     public void Dano()
     {
-
-        LifePointer.SetPlayerLife(LifePointer.playerLife-25);
-        if(LifePointer.playerLife <= 0)
+        if(dataSO.Vida <= 0)
         {
             Die();
         }
+        dataSO.Vida -= 25;
+        LifePointer.SetPlayerLife(dataSO.Vida);
     }
 
     public void Die()

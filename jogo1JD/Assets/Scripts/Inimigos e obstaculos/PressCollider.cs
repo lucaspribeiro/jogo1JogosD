@@ -7,6 +7,7 @@ public class PressCollider : MonoBehaviour
 {
     public BoxCollider2D collision;
     public Animator animator;
+    public float pressTime;
 
     private void Start()
     {
@@ -24,7 +25,7 @@ public class PressCollider : MonoBehaviour
         while (true) 
         { 
             ActivatePress();
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(pressTime);
         }
     
     }
