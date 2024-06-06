@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6731968159699395872}
   - component: {fileID: 4920810649947524718}
   - component: {fileID: 6253684219414500662}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Liminha
   m_TagString: Liminha
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5167437731531326360}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

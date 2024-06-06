@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1529215021423291849}
   - component: {fileID: 1308120266609441}
   - component: {fileID: 1600809193255369413}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Balinha
   m_TagString: Balinha
   m_Icon: {fileID: 0}
